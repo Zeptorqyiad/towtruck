@@ -1,15 +1,16 @@
 // ПЕРЕМЕННЫЕ>
 
-$minwidth: 320px;
 $md1: 992.98px;
 $md2: 767.98px;
 $md3: 479.98px;
-// $ff1: SF Pro Rounded;
-// $ff2: SF Pro Text;
+$minwidth: 320px;
+$ff1: SFProRounded;
+$ff2: SFProText;
 
 :root {
 	--white-color: #ffffff;
 	--blue-color: #0297d4;
+	--black-color: #000000;
 	--yellow-color: #fff5cc;
 	--grey-color: #f2f4f8;
 }

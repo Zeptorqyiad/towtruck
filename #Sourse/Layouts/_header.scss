@@ -1,0 +1,37 @@
+@import "../components/ui";
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.header_container {
+	width: 1720;
+}
+.header__content {
+	display: flex;
+	align-items: center;
+}
+.header__logo {
+	cursor: pointer;
+}
+.header__menu {
+}
+.menu {
+}
+.menu__icon {
+	display: none;
+}
+.icon-menu {
+}
+.menu__body {
+}
+.menu__list {
+	display: flex;
+}
+.menu__link {
+}
+.default__btn {
+}
+.header__btn {
+}
