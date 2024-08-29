@@ -1,6 +1,7 @@
 [class*="__container"] {
-	max-width: 800px;
+	max-width: 1430px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
 .wrapper {
@@ -11,6 +12,6 @@
 }
 
 body {
-	font-family: $ff1;
-	font-size: 12px;
+	// font-family: $ff1;
+	font-size: 20px;
 }
