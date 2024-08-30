@@ -1,7 +1,11 @@
 @import "../components/ui";
 
+//==================================Banner=====================================
+
 .banner {
 	background-color: var(--grey-background);
+}
+.banner__container {
 }
 .banner-bg {
 	position: relative;
@@ -46,7 +50,7 @@
 }
 
 .banner__content {
-	margin: 90px 0 80px 0;
+	padding: 90px 0 80px 0;
 }
 .banner__list {
 	list-style-type: none;
@@ -190,3 +194,67 @@
 		color: var(--white-color);
 	}
 }
+.banner__page-list {
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+	a {
+		width: 52px;
+		height: 52px;
+		border-radius: 6px;
+		border: 1px solid var(--blue-color);
+		color: var(--blue-color);
+		font-size: 26px;
+		font-weight: 600;
+		line-height: calc(31 / 26 * 100%);
+		text-align: center;
+		text-transform: uppercase;
+		padding: 10px;
+		> li {
+			display: flex;
+			justify-content: center;
+		}
+		&:not(:last-child) {
+			margin-right: 18px;
+		}
+	}
+	& a:nth-child(1) {
+		background-color: var(--blue-color);
+		color: var(--white-color);
+	}
+	& a:last-child {
+		padding: 13px 10px 10px 10px;
+	}
+}
+
+//==================================Banner Media=====================================
+
+//==================================callCheaply=====================================
+
+.callCheaply {
+}
+.callCheaply__banner {
+	position: relative;
+}
+.__container {
+}
+.banner-info {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	display: flex;
+	min-width: 1430px;
+	justify-content: center;
+	align-items: center;
+	p {
+		color: var(--white-color);
+		font-size: 40px;
+		font-weight: 600;
+		line-height: calc(48 / 40 * 100%);
+		margin: 0 125px 0 31px;
+	}
+}
+
+//==================================callCheaply Media=====================================
