@@ -257,7 +257,7 @@
 	}
 }
 .callCheaply__container {
-	padding: 95px 0 69px 0;
+	padding: 95px 15px 69px 15px;
 }
 .callCheaply__content {
 	display: flex;
@@ -293,7 +293,7 @@
 	background-color: var(--yellow-color);
 }
 .needToKnow__container {
-	padding: 100px 0;
+	padding: 100px 15px;
 }
 .needToKnow__content {
 	display: flex;
@@ -331,7 +331,8 @@
 	background-color: #f3f6f9;
 }
 .price__container {
-	padding: 100px 0;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 .price__content {
 	display: flex;
@@ -415,3 +416,156 @@
 	background-image: url("../../assets/icon/4.svg");
 }
 //==================================Price Media=====================================
+
+//==================================Advantages=====================================
+.advantages {
+	position: relative;
+}
+.advantages__container {
+	padding-top: 100px;
+}
+.advantages__content {
+	display: flex;
+	flex-direction: column;
+}
+.advantages__title {
+	color: var(--dark-color);
+	font-size: 40px;
+	font-weight: 600;
+	line-height: calc(48 / 40 * 100%);
+	margin-bottom: 48px;
+}
+.advantages__blocktext {
+	display: flex;
+	margin-bottom: 100px;
+}
+.advantages__ls {
+	max-width: 804px;
+}
+.advantages__subtitle {
+	color: var(--dark-color);
+	font-size: 24px;
+	font-weight: 400;
+	line-height: calc(31 / 26 * 100%);
+	margin-bottom: 32px;
+	> span {
+		font-size: 26px;
+		font-weight: 600;
+		line-height: calc(31 / 26 * 100%);
+	}
+}
+.advantages__list {
+	padding-left: 45px;
+}
+.advantages__list li {
+	list-style-image: url("../../assets/icon/Done.svg");
+}
+.advantages__list-item {
+	color: var(--dark-color);
+	font-size: 22px;
+	font-weight: 400;
+	line-height: calc(31 / 26 * 100%);
+	&:not(:last-child) {
+		margin-bottom: 32px;
+	}
+}
+
+.advantages__ticket-block {
+	display: flex;
+	justify-content: space-between;
+	> li {
+		padding: 48px;
+		background-color: var(--yellow-color);
+		width: 684px;
+		height: 593px;
+		display: flex;
+		flex-direction: column;
+		border: none;
+		border-radius: 20px;
+		> p {
+			color: var(--dark-color);
+			font-size: 26px;
+			font-weight: 600;
+			line-height: calc(31 / 26 * 100%);
+			margin-bottom: 32px;
+		}
+		> span {
+			color: var(--dark-color);
+			font-size: 26px;
+			font-weight: 400;
+			line-height: calc(31 / 26 * 100%);
+		}
+	}
+}
+//===================================Advantages Media====================================
+
+//===================================Weight====================================
+
+.weight {
+	margin-top: -163px;
+	background-color: #f3f6f9;
+	padding-bottom: 100px;
+}
+.weight__container {
+	padding-top: 263px;
+}
+.weight__content {
+}
+.weight__title {
+	color: var(--dark-color);
+	font-size: 40px;
+	font-weight: 600;
+	line-height: calc(48 / 40 * 100%);
+	margin-bottom: 48px;
+}
+.weight__subtitle {
+	color: var(--dark-color);
+	font-size: 26px;
+	font-weight: 400;
+	line-height: calc(31 / 26 * 100%);
+	> span {
+		font-weight: 600;
+	}
+	margin-bottom: 32px;
+}
+.swiper {
+	width: 1400px;
+	margin: 0 auto;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+	max-width: 684px;
+	height: 682px;
+	background-color: var(--white-color);
+	padding: 40px;
+	border: none;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	> p {
+		color: var(--dark-color);
+		font-size: 20px;
+		font-weight: 600;
+		line-height: calc(24 / 20 * 100%);
+	}
+	> img {
+		width: 604px;
+		height: 322px;
+	}
+	> span {
+		color: var(--dark-color);
+		font-size: 20px;
+		font-weight: 400;
+		line-height: calc(24 / 20 * 100%);
+	}
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+
+//===================================Weight Media====================================

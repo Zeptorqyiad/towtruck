@@ -465,7 +465,7 @@ body {
 }
 
 .callCheaply__container {
-  padding: 95px 0 69px 0;
+  padding: 95px 15px 69px 15px;
 }
 
 .callCheaply__content {
@@ -503,7 +503,7 @@ body {
 }
 
 .needToKnow__container {
-  padding: 100px 0;
+  padding: 100px 15px;
 }
 
 .needToKnow__content {
@@ -542,7 +542,8 @@ body {
 }
 
 .price__container {
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .price__content {
@@ -629,6 +630,157 @@ body {
 
 .block-canvas-4 canvas {
   background-image: url("../../assets/icon/4.svg");
+}
+
+.advantages {
+  position: relative;
+}
+
+.advantages__container {
+  padding-top: 100px;
+}
+
+.advantages__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__title {
+  color: var(--dark-color);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 48px;
+}
+
+.advantages__blocktext {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.advantages__ls {
+  max-width: 804px;
+}
+
+.advantages__subtitle {
+  color: var(--dark-color);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 119.2307692308%;
+  margin-bottom: 32px;
+}
+.advantages__subtitle > span {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 119.2307692308%;
+}
+
+.advantages__list {
+  padding-left: 45px;
+}
+
+.advantages__list li {
+  list-style-image: url("../../assets/icon/Done.svg");
+}
+
+.advantages__list-item {
+  color: var(--dark-color);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 119.2307692308%;
+}
+.advantages__list-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.advantages__ticket-block {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages__ticket-block > li {
+  padding: 48px;
+  background-color: var(--yellow-color);
+  width: 684px;
+  height: 593px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 20px;
+}
+.advantages__ticket-block > li > p {
+  color: var(--dark-color);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 119.2307692308%;
+  margin-bottom: 32px;
+}
+.advantages__ticket-block > li > span {
+  color: var(--dark-color);
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 119.2307692308%;
+}
+
+.weight {
+  margin-top: -163px;
+  background-color: #f3f6f9;
+  padding-bottom: 100px;
+}
+
+.weight__container {
+  padding-top: 263px;
+}
+
+.weight__title {
+  color: var(--dark-color);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 48px;
+}
+
+.weight__subtitle {
+  color: var(--dark-color);
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 119.2307692308%;
+  margin-bottom: 32px;
+}
+.weight__subtitle > span {
+  font-weight: 600;
+}
+
+.swiper {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  max-width: 684px;
+  height: 682px;
+  background-color: var(--white-color);
+  padding: 40px;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.swiper-slide > p {
+  color: var(--dark-color);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+}
+.swiper-slide > img {
+  width: 604px;
+  height: 322px;
+}
+.swiper-slide > span {
+  color: var(--dark-color);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
 }
 
 @font-face {
