@@ -461,7 +461,112 @@ body {
   font-size: 40px;
   font-weight: 600;
   line-height: 120%;
-  margin: 0 125px 0 31px;
+  margin: 0 121px 0 11px;
+}
+
+.callCheaply__container {
+  padding: 95px 0 69px 0;
+}
+
+.callCheaply__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.callCheaply__block-text {
+  max-width: 698px;
+}
+
+.block-text {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.block-text__title {
+  color: var(--dark-color);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.block-text__text {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 119.2307692308%;
+}
+
+.needToKnow {
+  background-color: var(--yellow-color);
+}
+
+.needToKnow__container {
+  padding: 100px 0;
+}
+
+.needToKnow__content {
+  display: flex;
+  flex-direction: column;
+}
+.needToKnow__content h2 {
+  color: var(--dark-color);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 48px;
+}
+
+.needToKnow__images {
+  display: flex;
+  width: 1055px;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.needToKnow__blocktext {
+  display: flex;
+  gap: 40px;
+}
+.needToKnow__blocktext > p {
+  width: 680px;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 119.2307692308%;
+}
+
+.price {
+  background-color: #f3f6f9;
+}
+
+.price__container {
+  padding: 100px 0;
+}
+
+.price__content {
+  display: flex;
+  flex-direction: column;
+}
+.price__content h2 {
+  color: var(--dark-color);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 48px;
+}
+.price__content p {
+  color: var(--dark-color);
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 119.2307692308%;
+  margin-bottom: 32px;
+}
+.price__content p > span {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1px;
 }
 
 @font-face {
@@ -477,19 +582,19 @@ body {
   font-weight: 400;
 }
 @font-face {
-  font-family: "SFProRounded";
+  font-family: "SFProText";
   src: url("../../assets/fonts/SF-Pro-Text-Medium.woff2") format("woff2");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
-  font-family: "SFProRounded";
+  font-family: "SFProText";
   src: url("../../assets/fonts/SF-Pro-Text-Semibold.woff2") format("woff2");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
-  font-family: "SFProRounded";
+  font-family: "SFProText";
   src: url("../../assets/fonts/SF-Pro-Text-Bold.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;

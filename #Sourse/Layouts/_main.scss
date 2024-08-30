@@ -253,8 +253,111 @@
 		font-size: 40px;
 		font-weight: 600;
 		line-height: calc(48 / 40 * 100%);
-		margin: 0 125px 0 31px;
+		margin: 0 121px 0 11px;
 	}
+}
+.callCheaply__container {
+	padding: 95px 0 69px 0;
+}
+.callCheaply__content {
+	display: flex;
+	justify-content: space-between;
+}
+.callCheaply__block-text {
+	max-width: 698px;
+}
+.block-text {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+	align-items: center;
+	padding: 10px 0;
+}
+.block-text__title {
+	color: var(--dark-color);
+	font-size: 40px;
+	font-weight: 600;
+	line-height: calc(48 / 40 * 100%);
+}
+.block-text__text {
+	font-weight: 400;
+	font-size: 26px;
+	line-height: calc(31 / 26 * 100%);
 }
 
 //==================================callCheaply Media=====================================
+
+//==================================NeedToKnow=====================================
+
+.needToKnow {
+	background-color: var(--yellow-color);
+}
+.needToKnow__container {
+	padding: 100px 0;
+}
+.needToKnow__content {
+	display: flex;
+	flex-direction: column;
+	h2 {
+		color: var(--dark-color);
+		font-size: 40px;
+		font-weight: 600;
+		line-height: calc(48 / 40 * 100%);
+		margin-bottom: 48px;
+	}
+}
+.needToKnow__images {
+	display: flex;
+	width: 1055px;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-bottom: 32px;
+}
+.needToKnow__blocktext {
+	display: flex;
+	gap: 40px;
+	> p {
+		width: 680px;
+		font-size: 26px;
+		font-weight: 400;
+		line-height: calc(31 / 26 * 100%);
+	}
+}
+
+//==================================NeedToKnow Media===================================
+
+//==================================Price=====================================
+.price {
+	background-color: #f3f6f9;
+}
+.price__container {
+	padding: 100px 0;
+}
+.price__content {
+	display: flex;
+	flex-direction: column;
+	h2 {
+		color: var(--dark-color);
+		font-size: 40px;
+		font-weight: 600;
+		line-height: calc(48 / 40 * 100%);
+		margin-bottom: 48px;
+	}
+	p {
+		color: var(--dark-color);
+		font-size: 26px;
+		font-weight: 400;
+		line-height: calc(31 / 26 * 100%);
+		margin-bottom: 32px;
+		> span {
+			font-weight: 600;
+			font-size: 26px;
+			line-height: 1px;
+		}
+	}
+}
+.price__block-columns {
+}
+.price-column {
+}
+//==================================Price Media=====================================
