@@ -1,0 +1,25 @@
+@import "../components/ui";
+
+//=======================================================================
+.footer {
+	background-color: var(--darkgreen-color);
+	height: 240px;
+	padding-top: 41px;
+}
+.footer__content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	> nav > a:not(:last-child) {
+		margin-right: 63px;
+	}
+	> nav > a {
+		color: var(--white-color);
+		font-size: 16px;
+		font-weight: 400;
+		line-height: calc(19 / 16 * 100%);
+		text-transform: uppercase;
+	}
+}
+
+//=======================================================================

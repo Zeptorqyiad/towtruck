@@ -167,6 +167,41 @@ h1, h2, h3, h4, h5, h6 {
   --grey-background: #f5f5f5;
 }
 
+.footer {
+  background-color: var(--darkgreen-color);
+  height: 240px;
+  padding-top: 41px;
+}
+
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__content > nav > a:not(:last-child) {
+  margin-right: 63px;
+}
+.footer__content > nav > a {
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 118.75%;
+  text-transform: uppercase;
+}
+
+:root {
+  --white-color: #ffffff;
+  --blue-color: #0297d4;
+  --black-color: #000000;
+  --yellow-color: #fff5cc;
+  --grey-color: #f2f4f8;
+  --lightblue-color: #36acde;
+  --darkblue-color: #077aa9;
+  --bluetext-color: #6ad3ff;
+  --darkgreen-color: #586c75;
+  --grey-background: #f5f5f5;
+}
+
 [class*=__container] {
   max-width: 1430px;
   margin: 0 auto;
@@ -855,7 +890,12 @@ body {
 }
 
 .bottom-ls {
+  display: flex;
+  justify-content: flex-end;
   flex: 0 1 50%;
+}
+.bottom-ls > img {
+  margin-left: -100px;
 }
 
 .answer__title-2 {
@@ -873,6 +913,177 @@ body {
   font-weight: 500;
   line-height: 31px;
   margin-bottom: 24px;
+}
+
+.faq {
+  background-color: #f3f6f9;
+}
+
+.faq__container {
+  padding-top: 106px;
+  padding-bottom: 100px;
+}
+
+.faq__content {
+  width: 100%;
+}
+
+.tabs__items {
+  display: flex;
+}
+
+.tabs__item {
+  height: 78px;
+  width: 275px;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-color);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 135.7142857143%;
+}
+.tabs__item > span {
+  position: relative;
+  z-index: 2;
+}
+
+.tabs__body {
+  padding: 48px 60px 60px 60px;
+  background-color: var(--white-color);
+  border-radius: 0px 20px 20px 20px;
+}
+
+.tabs__block {
+  position: relative;
+  display: none;
+  background-color: var(--white-color);
+}
+.tabs__block:target {
+  display: block;
+}
+.tabs__block::before {
+  content: "";
+  height: 78px;
+  width: 275px;
+  position: absolute;
+  top: -126px;
+  border-radius: 20px 20px 0px 0px;
+}
+.tabs__block:nth-child(1)::before {
+  background-color: var(--white-color);
+  left: -60px;
+}
+.tabs__block:nth-child(2)::before {
+  background-color: var(--white-color);
+  left: 216px;
+}
+.tabs__block > span:last-child {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 119.2307692308%;
+}
+
+.faq__title {
+  color: var(--dark-color);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 32px;
+}
+
+.faq__subtitle {
+  color: var(--dark-color);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 119.2307692308%;
+  margin-bottom: 28px;
+}
+.faq__subtitle > span {
+  font-weight: 600;
+}
+
+.faq__list li {
+  list-style-image: url("../../assets/icon/Done.svg");
+  margin-bottom: 29px;
+}
+
+.faq__list-item {
+  margin-left: 45px;
+}
+.faq__list-item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.faq__textblock {
+  color: var(--dark-color);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 119.2307692308%;
+  margin-bottom: 28px;
+}
+.faq__textblock > span {
+  font-weight: 600;
+}
+
+.item-how-list {
+  margin: 0px;
+  padding-left: 45px;
+  line-height: 31px;
+}
+
+.item-how-list:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.choose-1 {
+  background-image: url("../../assets/icon/num1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+}
+
+.choose-2 {
+  background-image: url("../../assets/icon/num2.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+}
+
+.choose-3 {
+  background-image: url("../../assets/icon/num3.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+}
+
+.choose-4 {
+  background-image: url("../../assets/icon/num4.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left top;
+}
+
+.choose-5 {
+  background-image: url("../../assets/icon/num5.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+}
+
+.choose-6 {
+  background-image: url("../../assets/icon/num6.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+}
+
+.choose-7 {
+  background-image: url("../../assets/icon/num7.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
 }
 
 @font-face {
