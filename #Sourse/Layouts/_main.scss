@@ -5,8 +5,6 @@
 .banner {
 	background-color: var(--grey-background);
 }
-.banner__container {
-}
 .banner-bg {
 	position: relative;
 	height: 142px;
@@ -18,7 +16,8 @@
 	}
 }
 .banner-bg {
-	h1 {
+	h1,
+	h2 {
 		position: absolute;
 		width: 100%;
 		height: 100%;
@@ -231,12 +230,8 @@
 
 //==================================callCheaply=====================================
 
-.callCheaply {
-}
 .callCheaply__banner {
 	position: relative;
-}
-.__container {
 }
 .banner-info {
 	position: absolute;
@@ -509,8 +504,6 @@
 .weight__container {
 	padding-top: 263px;
 }
-.weight__content {
-}
 .weight__title {
 	color: var(--dark-color);
 	font-size: 40px;
@@ -532,8 +525,6 @@
 	max-width: 1400px;
 	margin: 0 auto;
 	height: 720px;
-}
-.swiper-wrapper {
 }
 .swiper-slide {
 	max-width: 684px;
@@ -568,10 +559,6 @@
 .swiper-pagination-fraction {
 	bottom: var(--swiper-pagination-bottom, 0px);
 }
-.swiper-button-prev {
-}
-.swiper-button-next {
-}
 
 //===================================Weight Media====================================
 
@@ -579,8 +566,6 @@
 
 .answer {
 	background-color: var(--yellow-color);
-}
-.answer__container {
 }
 .answer__content {
 	display: flex;
@@ -670,8 +655,6 @@
 }
 .faq__content {
 	width: 100%;
-}
-.tabs {
 }
 .tabs__items {
 	display: flex;
@@ -816,3 +799,150 @@
 }
 
 //==================================FAQ Media=====================================
+
+//=======================================================================
+//=======================================================================
+
+.form__info {
+	padding: 60px 0;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	> p {
+		color: var(--dark-color);
+		font-size: 26px;
+		font-weight: 400;
+		line-height: calc(31 / 26 * 100%);
+		> span {
+			font-weight: 600;
+		}
+	}
+}
+.form__body {
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+	margin-bottom: 53px;
+}
+.form__item {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	> select {
+		font-size: 24px;
+		font-weight: 400;
+		line-height: calc(31 / 26 * 100%);
+		text-align: left;
+		background-repeat: no-repeat;
+		background-position: right center;
+		> option {
+			font-size: 26px;
+			font-weight: 400;
+			line-height: calc(31 / 26 * 100%);
+			text-align: left;
+		}
+	}
+}
+select {
+	appearance: none;
+	padding-right: 20px;
+}
+select::-ms-expand {
+	display: none;
+}
+.form__label {
+	color: #4a585e;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: calc(26 / 22 * 100%);
+	text-align: left;
+}
+.form__input {
+	box-sizing: border-box;
+	border: 0.5px solid var(--blue-color);
+	border-radius: 10px;
+	background: var(--white-color);
+	padding: 12px 24px;
+	height: 56px;
+	font-size: 22px;
+	&::placeholder {
+		color: #b3c8d1;
+		font-size: 22px;
+		font-weight: 400;
+		line-height: calc(31 / 22 * 100%);
+		text-align: left;
+	}
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.hr-bar {
+	> hr {
+		border: 1px solid var(--blue-color);
+		max-width: 582px;
+	}
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 53px;
+	> span {
+		color: #4a585e;
+		font-size: 26px;
+		font-weight: 400;
+		line-height: calc(31 / 26 * 100%);
+	}
+}
+textarea {
+	resize: none;
+}
+.form__textarea {
+	box-sizing: border-box;
+	border: 0.5px solid var(--blue-color);
+	border-radius: 10px;
+	background: var(--white-color);
+	width: 798px;
+	height: 346px;
+	font-size: 26px;
+	padding: 11px 24px 12px 24px;
+	&::placeholder {
+		color: #b3c8d1;
+		font-size: 22px;
+		font-weight: 400;
+		line-height: calc(31 / 26 * 100%);
+	}
+}
+.price__item-col {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	> input {
+		width: 322px;
+	}
+	> div > span {
+		margin-left: 12px;
+		color: #4a585e;
+		font-size: 22px;
+		font-weight: 400;
+		line-height: calc(26 / 22 * 100%);
+	}
+	> div > input[type="checkbox"] {
+		width: 24px;
+		height: 24px;
+		appearance: none;
+		-webkit-appearance: none;
+		background-color: initial;
+		border: 1px solid var(--blue-color);
+		border-radius: 4px;
+		cursor: pointer;
+		position: relative;
+		&:checked::after {
+			content: url("../../assets/icon/checked.svg");
+			position: absolute;
+			left: 3px;
+			top: 4px;
+		}
+	}
+}

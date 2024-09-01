@@ -6,6 +6,12 @@
 	padding: 0 15px;
 }
 
+[class*="&_container"] {
+	max-width: 828px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
 body._lock {
 	overflow: hidden;
 }

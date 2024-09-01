@@ -36,7 +36,91 @@
 			</div>
 		</header>
 		<main class="main">
-
+			<section class="form">
+				<div class="banner-bg">
+					<div class="banner-bg_top"></div>
+					<div class="banner-bg_bottom"></div>
+					<h2>Создание объявления</h2>
+				</div>
+				<div class="form__info __container">
+					<img src="./assets/icon/marketeq_money-alt-1.png" alt="info_image">
+					<p>
+						Заполните все поля формы на размещение своего объявления на сайте. <br>
+						Размещение объявления платное. Стоимость за одно объявление составляет <span>990 руб.</span><br>
+						Объявление будет опубликовано на сайте после оплаты и проверки модератором.
+					</p>
+				</div>
+				<form action="#" id="form" class="form__body &_container">
+					<div class="form__item">
+						<label for="formCity" class="form__label">Выберете город</label>
+						<select id="formCity" type="text" aria-valuenow="Москва" name="city" class="form__input">
+							<option value="Москва">Москва</option>
+							<option value="Пермь">Пермь</option>
+						</select>
+					</div>
+					<div class="form__item">
+						<label for="formName" class="form__label">Ваше имя</label>
+						<input id="formName" type="text" name="name" class="form__input _req" required>
+					</div>
+					<div class="form__item">
+						<label for="formNum" class="form__label">Номер мобильного телефона</label>
+						<input id="formNum" placeholder="+7 (999) 999 99 99" type="number" name="telephone"
+							class="form__input _req" required>
+					</div>
+					<div class="form__item">
+						<label for="formNumCity" class="form__label">Номер городского телефона</label>
+						<input id="formNumCity" placeholder="+7 (999) 999 99 99" type="number" name="telephone"
+							class="form__input _req" required>
+					</div>
+					<div class="form__item">
+						<label for="formEmail" class="form__label">Ваш email</label>
+						<input id="formEmail" placeholder="example@gmail.com" type="email" name="email"
+							class="form__input _req _email" required>
+					</div>
+					<div class="form__item">
+						<label for="formAdress" class="form__label">Адрес стоянки эвакуатора</label>
+						<input id="formAdress" type="text" name="adress" class="form__input _req" required>
+					</div>
+					<!-- <button type="submit" class="form__button">Отправить</button> -->
+				</form>
+				<div class="hr-bar __container">
+					<img src="./assets/icon/Vector 4.svg" alt="Vector 4">
+					<span>ИНФОРМАЦИЯ</span>
+					<img src="./assets/icon/Vector 4.svg" alt="Vector 4">
+				</div>
+				<form action="#" id="form" class="form__body &_container">
+					<div class="form__item">
+						<label for="formTitle" class="form__label">Заголовок объявления</label>
+						<input id="formTitle" placeholder="Не более 50 символов" type="text" name="title"
+							class="form__input _req" required>
+					</div>
+					<div class="form__item">
+						<label for="formTextarea" class="form__label">Заголовок объявления</label>
+						<textarea name="textarea" placeholder="Не более 50 символов" id="formTextarea"
+							class="form__textarea _req" required></textarea>
+					</div>
+				</form>
+				<div class="hr-bar __container">
+					<img src="./assets/icon/Vector 4.svg" style="width: 640px;" alt="Vector 4">
+					<span>ЦЕНЫ</span>
+					<img src="./assets/icon/Vector 4.svg" style="width: 640px;" alt="Vector 4">
+				</div>
+				<form action="#" id="form" class="form__body &_container">
+					<div class="form__item">
+						<label for="formName" class="form__label">Легковые автомобили</label>
+						<div class="price__item-col">
+							<div>
+								<input id="formName" type="text" name="name" class="form__input _req" required>
+								<span>рублей</span>
+							</div>
+							<div>
+								<input type="checkbox">
+								<span>Услугу не оказываю</span>
+							</div>
+						</div>
+					</div>
+				</form>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__content __container">
