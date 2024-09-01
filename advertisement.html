@@ -81,7 +81,6 @@
 						<label for="formAdress" class="form__label">Адрес стоянки эвакуатора</label>
 						<input id="formAdress" type="text" name="adress" class="form__input _req" required>
 					</div>
-					<!-- <button type="submit" class="form__button">Отправить</button> -->
 				</form>
 				<div class="hr-bar __container">
 					<img src="./assets/icon/Vector 4.svg" alt="Vector 4">
@@ -110,7 +109,7 @@
 						<label for="formName" class="form__label">Легковые автомобили</label>
 						<div class="price__item-col">
 							<div>
-								<input id="formName" type="text" name="name" class="form__input _req" required>
+								<input id="formName" type="number" name="name" class="form__input _req" required>
 								<span>рублей</span>
 							</div>
 							<div>
@@ -119,6 +118,86 @@
 							</div>
 						</div>
 					</div>
+					<div class="form__item">
+						<label for="formName" class="form__label">Мототехника</label>
+						<div class="price__item-col">
+							<div>
+								<input id="formName" type="number" name="name" class="form__input _req" required>
+								<span>рублей</span>
+							</div>
+							<div>
+								<input type="checkbox">
+								<span>Услугу не оказываю</span>
+							</div>
+						</div>
+					</div>
+					<div class="form__item">
+						<label for="formName" class="form__label">Внедорожник</label>
+						<div class="price__item-col">
+							<div>
+								<input id="formName" type="number" name="name" class="form__input _req" required>
+								<span>рублей</span>
+							</div>
+							<div>
+								<input type="checkbox">
+								<span>Услугу не оказываю</span>
+							</div>
+						</div>
+					</div>
+					<div class="form__item">
+						<label for="formName" class="form__label">Микроавтобус</label>
+						<div class="price__item-col">
+							<div>
+								<input id="formName" type="number" name="name" class="form__input _req" required>
+								<span>рублей</span>
+							</div>
+							<div>
+								<input type="checkbox">
+								<span>Услугу не оказываю</span>
+							</div>
+						</div>
+					</div>
+					<div class="form__item">
+						<label for="formName" class="form__label">Загородный тариф</label>
+						<div class="price__item-col">
+							<div>
+								<input id="formName" type="number" name="name" class="form__input _req" required>
+								<span>руб/км</span>
+							</div>
+							<div>
+								<input type="checkbox">
+								<span>Услугу не оказываю</span>
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="hr-bar __container">
+					<img src="./assets/icon/Vector 4.svg" style="width: 641px;" alt="Vector 4">
+					<span>ФОТО</span>
+					<img src="./assets/icon/Vector 4.svg" style="width: 641px;" alt="Vector 4">
+				</div>
+				<form action="#" id="form" class="form__body &_container">
+					<div class="form__item">
+						<label for="formPhoto" class="form__label">Прикрепите фотографию к объявлению</label>
+						<label for="file-upload" class="custom-file-upload">
+							Загрузить
+						</label>
+						<input id="file-upload" type="file" class="form__file">
+					</div>
+				</form>
+				<form action="#" id="form" class="form__body confirm-body &_container">
+					<div class="form__item item-confirm">
+						<div class="price__item-col">
+							<div>
+								<input type="checkbox" style="display: inline-flex;">
+							</div>
+						</div>
+						<span>
+							Я соглашаюсь с правилами использования сервиса, а также с передачей и обработкой моих данных в
+							evarus.ru. Я подтверждаю своё совершеннолетие и ответственность за размещение.
+						</span>
+					</div>
+					<button type="submit" href="##" class="default__btn advertisment__btn">Продолжить</button>
 				</form>
 			</section>
 		</main>
