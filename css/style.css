@@ -112,7 +112,11 @@ h1, h2, h3, h4, h5, h6 {
   gap: 135px;
 }
 
-.menu__icon {
+.burger__list {
+  display: none;
+}
+
+.icon-menu {
   display: none;
 }
 
@@ -154,6 +158,98 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--darkblue-color);
 }
 
+.icon-menu.active span:nth-child(1) {
+  width: 100%;
+  top: 14px;
+  transform: rotate(45deg);
+}
+.icon-menu.active span:nth-child(2) {
+  width: 100%;
+  transform: scale(0);
+}
+.icon-menu.active span:nth-child(3) {
+  width: 100%;
+  bottom: 13px;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 1400.98px) {
+  .menu__list :not(:last-child) {
+    margin-right: 58px;
+  }
+  .menu {
+    gap: 58px;
+  }
+}
+@media (max-width: 968.98px) {
+  .menu {
+    display: none;
+  }
+  .icon-menu {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 32px;
+  }
+  .icon-menu span {
+    transition: all 0.5s ease 0s;
+  }
+  .icon-menu span:nth-child(1) {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 5px;
+    background-color: var(--black-color);
+  }
+  .icon-menu span:nth-child(2) {
+    position: absolute;
+    width: 100%;
+    top: 14px;
+    height: 5px;
+    background-color: var(--black-color);
+  }
+  .icon-menu span:nth-child(3) {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 5px;
+    background-color: var(--black-color);
+  }
+  .burger__list {
+    transform: translateY(-100%);
+    gap: 40px;
+  }
+  .burger__list > a > span {
+    color: var(--black-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+  }
+  .burger__list.active {
+    transition: all 0.3s ease 0s;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 143px;
+    top: 156px;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+    transform: translateY(0%);
+  }
+}
+@media (max-width: 767.98px) {
+  .header__content {
+    height: 116px;
+  }
+  .burger__list.active {
+    height: 143px;
+    top: 116px;
+  }
+}
 :root {
   --white-color: #ffffff;
   --blue-color: #0297d4;
@@ -483,6 +579,20 @@ body {
   padding: 13px 10px 10px 10px;
 }
 
+@media (max-width: 1168.98px) {
+  .banner-bg h1,
+  .banner-bg h2 {
+    font-size: 35px;
+    line-height: 120%;
+  }
+}
+@media (max-width: 824.98px) {
+  .banner-bg h1,
+  .banner-bg h2 {
+    flex-wrap: wrap;
+    font-size: 25px;
+  }
+}
 .callCheaply__banner {
   position: relative;
 }
